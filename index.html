@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!--
+ - File              : index.html
+ - Author            : Filippo Lazzati <filippo.lazzati@polimi.it>
+ - Last Modified Date: 25 September 2024
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Pagina personale - Filippo Lazzati">
+        <meta name="author" content="Filippo Lazzati">
+        <title>Filippo Lazzati</title>
+
+        <!--<link href="css/custom.css" rel="stylesheet">-->
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script>
+            var nav_height = 100px; // pixels
+            $(window).bind('hashchange', function(e){
+                if($(location.hash).hasClass('my-class')){
+                    scrollBy(0, nav_height);
+                }
+                return false;
+            });
+            $(document).ready(function(){
+                if($(location.hash).hasClass('my-class')){
+                    $('html,body').animate({
+                        scrollTop: $(location.hash).offset().top - nav_height - 10
+                    }, 10 );
+                }
+            });
+        </script>
+        <!-- a {color: rgb(69, 122, 251);} -->
+        <style>
+            h2 {color: rgb(69, 122, 251);}
+            h3 {color: rgb(69, 122, 251);}
+            h4 {color: rgb(69, 122, 251);}
+            h5 {color: rgb(69, 122, 251);}
+            a {color: rgb(69, 122, 251);}
+        </style>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- Fixed navbar <nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc"> -->
+            <nav class="navbar navbar-expand-md fixed-top bg-light bg-udc">
+                <div class="container">
+                    <div class="col-3 mx-auto d-block">
+                        <a class="navbar-brand"
+                        href="https://filippolazzati.github.io/"><b>Filippo
+                        Lazzati</b></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutme">&nbsp; About
+                               Me &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publications">&nbsp; Publications &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">&nbsp; Education &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">&nbsp; Experience &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#academic">&nbsp; Academic Activities &nbsp;</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">&nbsp; Contacts &nbsp;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Begin page content -->
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-3 mx-auto d-block">
+                    <br><br>
+                    <div class="row mt-5 mx-auto d-block text-center">
+                        <img src="img/profile.png" class="img-fluid rounded-circle mb-3" alt="Profile picture">
+                        <h2>Filippo Lazzati</h2>
+                        <p class="lead"><b>Ph.D. Student</b><br>Politecnico di Milano</p>
+                    </div>
+                    <hr>
+                    <div class="row mx-auto d-block">
+                        <p><a target="_blank"
+                        href="https://orcid.org/0009-0004-2561-417X"><img
+                        src="img/orcid_4.png" alt="ORCID" width="26"
+                        height="26"></a>&nbsp; &nbsp;<a target="_blank"
+                        href="https://orcid.org/0009-0004-2561-417X">ORCID</a></p>
+                        <p><a target="_blank"
+                        href="https://github.com/filippolazzati"><img
+                        src="img/github.png" alt="GitHub" width="26"
+                        height="26"></a>&nbsp; &nbsp;<a target="_blank"
+                        href="https://github.com/filippolazzati">GitHub</a></p>
+                        <p><a target="_blank"
+                        href="www.linkedin.com/in/filippo-lazzati"><img
+                        src="img/linkedin_4.png" alt="LinkedIn" width="26"
+                        height="26"></a>&nbsp; &nbsp;<a target="_blank"
+                        href="www.linkedin.com/in/filippo-lazzati">LinkedIn</a></p>
+                        <p><a target="_blank"
+                        href="https://scholar.google.com/citations?user=lIf4g_IAAAAJ&hl=en"><img
+                        src="img/scholar_4.png" alt="Google Scholar" width="26"
+                        height="26"></a>&nbsp; &nbsp;<a target="_blank"
+                        href="https://scholar.google.com/citations?user=lIf4g_IAAAAJ&hl=en">Google
+                        Scholar</a></p>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <br><br>
+                    <section id="aboutme" class="mt-5" align="justify">
+                        <h2 class="display-5">About Me</h2><hr style="margin-top: 25px;">
+                        Since September 2023, I am a Ph.D. student in
+                        Information Technology at the Dipartimento di
+                        Elettronica, Informazione e Bioingegneria (<a
+                        target="_blank"
+                        href="https://www.deib.polimi.it/eng/home-page">DEIB</a>)
+                        at <a target="_blank"
+                        href="https://www.polimi.it/en/">Politecnico di Milano</a>,
+                        under the supervision of Prof. <a target="_blank"
+                        href="https://albertometelli.github.io/">A.M.
+                        Metelli</a>.
+                        <br><br>
+                        In 2021, I received a B.Sc. in Computer Science and
+                        Engineering from Politecnico di Milano (with honors),
+                        and in 2023, I earned a M.Sc. in Computer Science and
+                        Engineering from Politecnico di Milano (with honors),
+                        graduating one semester early. During my M.Sc., I
+                        attended the prestigious <a target="_blank"
+                        href="https://www.asp-poli.it/">ASP</a> honor program.
+                        After graduation and before starting my Ph.D., I worked
+                        as a Machine Learning Engineer at <a target="_blank"
+                        href="https://www.mlcube.com/home_2/">ML<sup>3</sup></a>.
+                        <br><br>
+                        In my free time, I enjoy sports, particularly skiing ⛷️ and
+                        playing tennis 🎾. I competed for three years in the prestigious <a target="_blank"
+                        href="https://www.fitp.it/">FITP</a>
+                        Serie B and two years in Serie C in Italy, and I am
+                        currently an active player in the national circuit.
+                        <br><br> Download my <a target="_blank" href="cv.pdf">Curriculum
+                        Vitae</a> (updated September 2024).
+                        <h4 style="margin-top: 40px;">Research Interests</h4>
+                        <hr style="margin-top: 0px;">
+                        My research interests lie in the field of Artificial
+                        Intelligence and Machine Learning, with a particular
+                        focus on <b>Reinforcement Learning</b>. I am currently
+                        exploring the theoretical and algorithmic aspects of:
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="padding: 5px 0px;">
+                                <i>Inverse Reinforcement Learning</i>
+                            </li>
+                            <li style="padding: 5px 0px;">
+                                <i>Reward Learning</i>
+                            </li>
+                        </ul>
+                        Additionally, I am interested in optimization,
+                        statistics, and deep learning.
+                        <h4 style="margin-top: 40px;">Awards and Recognitions</h4>
+                        <hr style="margin-top: 0px;">
+                        <ul>
+                            <li style="padding: 5px 0px;">
+                                Oral presentation at <a target="_blank"
+                                href="https://icml.cc/Conferences/2023">ICML
+                                2023</a> (top 2.39%)
+                            </li>
+                            <li style="padding: 5px 0px;">
+                                Ph.D. Scholarship (MIUR)
+                            </li>
+                            <li style="padding: 5px 0px;">
+                                Admission to the <a target="_blank"
+                                href="https://www.asp-poli.it/">Alta
+                                Scuola Politecnica</a> honour program 2022/2023
+                                - top 90 students of Politecnico di Milano
+                            </li>
+                            <li style="padding: 5px 0px;">
+                                "Migliori Matricole" award - best freshmen of
+                                Politecnico di Milano 2018/2019
+                            </li>
+                            <li style="padding: 5px 0px;">
+                                Scholarship award by
+                                <!-- <a target="_blank"
+                                href="https://www.comune.romano.bg.it/novita/notizie/dettaglio-novita/Borse-e-Premi-di-studio-a.s.-2023-2024/"></a> -->
+                                Municipality
+                                of Romano di L.dia 2018
+                                - best high school students
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="publications" class="mt-5">
+                        <h2 class="display-5">Publications <span
+                        style="font-weight: normal; font-size: 1rem;
+                        line-height: 1.2; color:black;">(updated September
+                        2024)</span></h2>
+                        <hr style="margin-top: 25px;">
+                        <h4>International Conferences</h4>
+                        <hr style="margin-top: 0px;">
+                        <ol>
+                            <li>                        <p>
+                                <u>Filippo Lazzati</u>, Mirco Mutti and Alberto
+                                Maria Metelli. "How to Scale Inverse RL to Large
+                                State Spaces? A Provably Efficient Approach".
+                                Advances in Neural Information Processing Systems 38
+                                (<b>NeurIPS</b>), <i>2024</i>. Acceptance rate:
+                                <b>25.8%</b>. Core 2023: A*.
+                                <br>
+                                <a target="_blank" href="https://arxiv.org/abs/2406.03812">[arXiv]</a>
+                            </p></li>
+                            <li>                        <p>
+                                <u>Filippo Lazzati</u>, Mirco Mutti and Alberto
+                                Maria Metelli. "Offline Inverse RL: New Solution
+                                Concepts and Provably Efficient Algorithms".
+                                International Conference on Machine Learning 41 (<b>ICML</b>),
+                                <i>2024</i>. Acceptance rate:
+                                    2609 /9473 (<b>27.5%</b>). Core 2023: A*.
+                                <br>
+                                <a target="_blank"
+                                href="https://proceedings.mlr.press/v235/lazzati24a.html">[Link]</a>
+                                <a target="_blank" href="bibtex papers/icml2024.bib">[BibTeX]</a>
+                                <a target="_blank" href="https://arxiv.org/abs/2402.15392">[arXiv]</a>
+                            </p></li>
+                            <li><p>
+                                Alberto Maria Metelli, <u>Filippo Lazzati</u>
+                                and Marcello Restelli. "Towards Theoretical
+                                Understanding of Inverse Reinforcement Learning".
+                                International Conference on Machine Learning 40
+                                (<b>ICML</b>), <i>2023</i>. Acceptance rate: 1827/6538 (27.9%),
+                                <b>Oral</b>: 156/6538 (<b>2.39%</b>). CORE 2023: A*.
+                                <br>
+                                <a target="_blank" href="https://proceedings.mlr.press/v202/metelli23a.html">[Link]</a>
+                                <a target="_blank" href="bibtex papers/icml2023.bib">[BibTeX]</a>
+                                <a target="_blank" href="https://arxiv.org/abs/2304.12966">[arXiv]</a>
+                            </p></li>
+                            <li><p>
+                                Margherita Musumeci, Juan Sebastian Amaya Cano,
+                                <u>Filippo Lazzati</u>, Chiara Martano,
+                                Francesco Pappone, Claudio Ramonda, Marco Ricci,
+                                Jorge A. Tobon, Giovanna Turvani, Mario R. Casu,
+                                Marco Mussetta, and Francesca Vipiana.
+                                "Development of a Deep-Learning Pipeline to
+                                Detect and Locate Contaminants of Industrial
+                                Products via non-Invasive Microwave Signals".
+                                IEEE Conference on AgriFood Electronics
+                                (<b>IEEE CAFE</b>),
+                                <i>2023</i>.
+                                <br>
+                                <a target="_blank" href="https://ieeexplore.ieee.org/document/10291829">[Link]</a>
+                                <a target="_blank" href="bibtex papers/ieeecafe2023.bib">[BibTeX]</a>
+                            </p></li>
+                          </ol>
+                        <h4>Pre-prints</h4>
+                        <ol>
+                            <li>
+                                <p>
+                                    <u>Filippo Lazzati</u> and Alberto Maria
+                                    Metelli. "Learning Utilities from
+                                    Demonstrations in Markov Decision
+                                    Processes".
+                                    <br>
+                                <a target="_blank" href="">[arXiv]</a>
+                                </p>
+                            </li>
+                        </ol>
+                        <p>
+                    </section>
+                    <section id="education" class="mt-5">
+                        <h2 class="display-5">Education</h2><hr style="margin-top: 25px;">
+                        <p>
+                            <b>Ph.D. in Information Technology </b> (Sep 2023 - Now)<br>
+                            Focus on Inverse Reinforcement Learning and Reward
+                            Learning<br>
+                            <i>Duration: </i>3 years <br>
+                            <i>Where: </i>Politecnico di Milano, Milan, Italy<br>
+                            <i>Supervisor:</i> Prof. Alberto Maria Metelli
+                        </p>
+                        <p>
+                            <b>Alta Scuola Politecnica (ASP) Diploma </b> (Mar
+                            2022 - Feb 2024)<br>
+                            Multidisciplinary honour program - <a target="_blank"
+                            href="https://www.asp-poli.it/">ASP website</a><br>
+                            <i>Duration: </i>2 years <br>
+                            <i>Where: </i>Politecnico di Milano, Milan, Italy<br>
+                            <i>Project:</i> Microwave sensing for food
+                            contamination monitoring - <a target="_blank"
+                            href="https://www.wavision.it/">Wavision</a>
+                            <br>
+                            <a target="_blank"
+                            href="https://ieeexplore.ieee.org/document/10291829">[Link
+                            paper]</a>
+                            <a target="_blank"
+                            href="documents/asp_paper.pdf">[PDF paper]</a>
+                        </p>
+                        <p>
+                            <b>M.Sc. in Computer Science and Engineering </b> (Sep 2021 - May 2023)<br>
+                            <i>Duration: </i>2 years <br>
+                            <i>Where: </i>Politecnico di Milano, Milan, Italy<br>
+                            <i>Final mark:</i> 110 cum laude/110<br>
+                            <i>Average exam mark:</i> 29.80/30
+                            <br>
+                            <a target="_blank"
+                            href="https://www.politesi.polimi.it/handle/10589/212441">[Link
+                            thesis]</a>
+                            <a target="_blank"
+                            href="documents/MSc_thesis.pdf">[PDF thesis]</a>
+                        </p>
+                        <p>
+                            <b>B.Sc. in Computer Science and Engineering </b>
+                            (Sep 2018 - Jul 2021)<br>
+                            <i>Duration: </i>3 years <br>
+                            <i>Where: </i>Politecnico di Milano, Milan, Italy<br>
+                            <i>Final mark:</i> 110 cum laude/110<br>
+                            <i>Average exam mark:</i> 29.97/30
+                        </p>
+                        <p>
+                            <b>High School Diploma </b>(Sep 2013 - Jun 2018)<br>
+                            Liceo scientifico - scienze
+                            applicate<br>
+                            <i>Duration: </i>5 years <br>
+                            <i>Where: </i>Istituto Superiore don Lorenzo Milani, Romano di Lombardia, Italy<br>
+                            <i>Final mark:</i> 100/100
+                                 
+                        </p>
+                    </section>
+                    <section id="experience" class="mt-5">
+                        <h2 class="display-5">Experience</h2><hr style="margin-top: 25px;">
+                        <p>
+                            <b>Machine Learning Engineer</b> (Feb 2023 -
+                            Jul 2023)<br>
+                            Development of reinforcement learning and machine learning
+                            algorithms in Python<br>
+                            <i>Duration:</i> 6 months<br>
+                            <i>Company:</i> <a target="_blank"
+                            href="https://www.mlcube.com/home_2/">ML Cube srl</a><br>
+                            <i>Type of employment:</i> internship<br>
+                            <i>Type of business or sector:</i> IT Services and IT Consulting<br>
+                        </p>
+                        <p>
+                            <b>Information Technology Teacher</b> (Oct 2019 -
+                            Feb 2020)<br>
+                            Teaching the fundamentals of Windows, Internet, and
+                            the Microsoft Office Suite<br>
+                            <i>Duration:</i> 5 months<br>
+                            <i>Company:</i> Municipality of Romano di Lombardia<br>
+                            <i>Type of employment:</i> Fixed Term Contract<br>
+                            <i>Type of business or sector:</i> Public Sector, Teaching<br>
+                        </p>
+                    </section>
+                    <section id="academic" class="mt-5">
+                        <h2 class="display-5">Academic Activities</h2><hr style="margin-top: 25px;">
+                        <h4>Teaching</h4>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            <b>Lab Sessions Lecturer</b> (Sep 2024 - Dec
+                            2024)<br>
+                            Lab sessions on C and Matlab programming
+                            languages<br>
+                            <i>University: </i>Politecnico di Milano<br>
+                            <i>Duration: </i>18 hours<br>
+                            <i>Course: </i>Fondamenti di Informatica<br>
+                            
+                        </p>
+                        <h4>Participation to International Conferences and
+                        Workshops</h4>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            <b>International Conference on Machine Learning - ICML 2024</b> <br>
+                            Vienna, Austria. July 2024.
+                        </p>
+                        <p>
+                            <b>European Workshop on Reinforcement Learning - EWRL 2023</b> <br>
+                            Brussels, Belgium. September 2023.
+                        </p>
+                        <h4>Master's Students Supervision</h4>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            <b>Leonardo Pesce</b>. Co-supervision. (M.Sc. in Computer Science and Engineering, in progress)
+                        </p>
+                        <h4>Reviewing</h4>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            <b>Reviewer for International Conferences:</b>
+                            <br>
+                            Neural Information Processing Systems (NeurIPS)
+                            <br>
+                            International Conference on Machine Learning (ICML)
+                            <br>
+                            International Conference on Learning Representations (ICLR)
+                        </p>
+                        <p>
+                            <b>Reviewer for International Journals:</b>
+                            <br>
+                            TMLR - Transactions on Machine Learning Research (Q1)
+                            <br>
+                            IEEE - Transactions on Neural Networks and Learning Systems (Q1)
+                        </p>
+                        <p>
+                            <b>Reviewer for International Workshops:</b>
+                            <br>
+                            ARLET @ ICML 2024
+                        </p>
+                    </section>
+                    <section id="contacts" class="mt-5">
+                        <h2 class="display-5">Contacts</h2><hr style="margin-top: 25px;">
+                        <p>
+                            <b>Email </b> <br>
+                            <a href="mailto:filippo.lazzati@polimi.it">filippo.lazzati@polimi.it</a>
+                        </p>
+                        </p>
+                        <h4>Office</h4>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            Office 21, First Floor of Building 21 <br>
+                            Dipartimento di Elettronica, Informazione e Bioingegneria <br>
+                            Politecnico di Milano <br>
+                            Via Ponzio 34/5, Milan, 20133, Italy
+                        </p>
+                    </section>
+                    <br>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <!-- <span class="text-muted"> © 2024 - Marco Mussi </span> -->
+            </div>
+        </footer>
+        <!-- Bootstrap core JS at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bibtex.js"></script>
+    </body>
+</html>

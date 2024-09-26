@@ -1,0 +1,16 @@
+
+@InProceedings{pmlr-v235-lazzati24a,
+  title = 	 {Offline Inverse {RL}: New Solution Concepts and Provably Efficient Algorithms},
+  author =       {Lazzati, Filippo and Mutti, Mirco and Metelli, Alberto Maria},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {26085--26151},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/lazzati24a/lazzati24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/lazzati24a.html},
+  abstract = 	 {<em>Inverse reinforcement learning</em> (IRL) aims to recover the reward function of an <em>expert</em> agent from demonstrations of behavior. It is well-known that the IRL problem is fundamentally ill-posed, i.e., many reward functions can explain the demonstrations. For this reason, IRL has been recently reframed in terms of estimating the <em>feasible reward set</em> (Metelli et al., 2021), thus, postponing the selection of a single reward. However, so far, the available formulations and algorithmic solutions have been proposed and analyzed mainly for the <em>online</em> setting, where the learner can interact with the environment and query the expert at will. This is clearly unrealistic in most practical applications, where the availability of an <em>offline</em> dataset is a much more common scenario. In this paper, we introduce a novel notion of feasible reward set capturing the opportunities and limitations of the offline setting and we analyze the complexity of its estimation. This requires the introduction an original learning framework that copes with the intrinsic difficulty of the setting, for which data coverage is not under control. Then, we propose two computationally and statistically efficient algorithms, IRLO and PIRLO, for addressing the problem. In particular, the latter adopts a specific form of <em>pessimism</em> to enforce the novel, desirable property of <em>inclusion monotonicity</em> of the delivered feasible set. With this work, we aim to provide a panorama of the challenges of the offline IRL problem and how they can be fruitfully addressed.}
+}
